@@ -1,0 +1,16 @@
+.control_wrapper {
+  display: flex;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 3px 0;
+}
+
+.play_button {
+  margin: 8px 15px auto;
+  cursor: pointer;
+  width: 35px;
+}

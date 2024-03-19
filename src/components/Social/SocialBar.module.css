@@ -1,0 +1,8 @@
+.social_bar {
+  display: flex;
+}
+
+@media screen and (orientation: portrait) {
+  .social_bar {
+  }
+}

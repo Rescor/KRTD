@@ -1,0 +1,9 @@
+.elem_container {
+  display: flex;
+  margin: 0 10px;
+}
+
+.elem_text {
+  margin: 10px 6px;
+  font-size: 18px;
+}

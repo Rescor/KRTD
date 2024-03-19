@@ -1,0 +1,77 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+.loader > div {
+  width: 2px;
+  height: 100%;
+  float: left;
+  margin: 0 2px;
+  -webkit-animation: stretch 2s infinite;
+  animation: stretch 2s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
+  animation-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
+}
+
+.loader .r1 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.loader .r2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.loader .r3 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.loader .r4 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+.loader .r5 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+@-webkit-keyframes stretch {
+  0%, 20%, 49% {
+    transform: scaleY(0.4);
+    background-color: dodgerblue;
+  }
+  10% {
+    transform: scaleY(1);
+  }
+  50%, 70%, 100% {
+    transform: scaleY(0.4);
+    background-color: #94d938;
+  }
+  60% {
+    transform: scaleY(1);
+    background-color: #94d938;
+  }
+}
+
+@keyframes stretch {
+  0%, 20%, 49% {
+    transform: scaleY(0.4);
+    background-color: dodgerblue;
+  }
+  10% {
+    transform: scaleY(1);
+  }
+  50%, 70%, 100% {
+    transform: scaleY(0.4);
+    background-color: #94d938;
+  }
+  60% {
+    transform: scaleY(1);
+    background-color: #94d938;
+  }
+}

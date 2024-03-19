@@ -1,0 +1,24 @@
+.song_title {
+  font-size: 80px;
+  margin: 5px 0 0;
+  padding: 0 30px;
+}
+
+.song_artist {
+  font-size: 45px;
+  padding: 0 30px;
+  margin: 0;
+}
+
+@media screen and (orientation: portrait) {
+  .song_title {
+    font-size: 50px;
+    margin: 20px 0 0;
+    padding: 0 10px;
+  }
+
+  .song_artist {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+}

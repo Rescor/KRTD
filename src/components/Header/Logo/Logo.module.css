@@ -1,0 +1,11 @@
+.logo {
+  font-size: 30px;
+  margin: 0;
+}
+
+@media screen and (orientation: portrait) {
+  .logo {
+    font-size: 22px;
+    padding: 3px;
+  }
+}

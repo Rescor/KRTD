@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  padding: 18px 25px;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+}
+
+@media screen and (orientation: portrait) {
+  .header {
+    padding: 10px 15px;
+  }
+}

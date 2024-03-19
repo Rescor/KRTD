@@ -1,0 +1,10 @@
+.slider_wrapper {
+  display: flex;
+  margin: auto 0;
+}
+
+@media (orientation: portrait) {
+  .slider_wrapper {
+    display: none;
+  }
+}

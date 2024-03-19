@@ -1,29 +1,9 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
+import { usePlayerControl } from "../../hooks/usePlayerControl";
 
-export default function Player(props) {
+export default function Player({ setIcon, src, isPlaying, volume }) {
   const audioRef = useRef(null);
+  usePlayerControl({ volume, isPlaying, audioRef, src, setIcon })
 
-  useEffect( () => {
-    audioRef.current.volume = props.volume / 100;
-  }, [props.volume])
-
-  useEffect(() => {
-
-    if (props.isPlaying) {
-      audioRef.current.src = props.src;
-      props.setIcon('loading')
-      audioRef.current.load();
-      audioRef.current.oncanplay = () => {
-        audioRef.current.play();
-        props.setIcon('pause');
-      }
-    } else {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        props.setIcon('play')
-      }
-    }
-  }, [props.isPlaying, props.src]);
-
-  return <audio ref={audioRef} src={props.src} preload="none" />
+  return <audio ref={audioRef} src={src} preload="none" />
 }

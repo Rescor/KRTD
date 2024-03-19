@@ -1,6 +1,6 @@
 # KRTD: The Night Radio
 
-Welcome to the KRTD - the best night radio on the Internet!\
+Welcome to the KRTD - the best night radio on the Internet!
 
 Website: [krtd.net](https://krtd.net/)\
 Discord: [invite link](https://discord.com/invite/kDygPTm)

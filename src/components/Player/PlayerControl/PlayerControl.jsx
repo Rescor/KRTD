@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-import { sources } from '../../../utils/data'
-import Player from "../Player";
+import { useState } from "react";
+import { useInitPlayerValues } from "../../../hooks/useInitPlayerValues";
+import QualitySelector from "./QualitySelector/QualitySelector";
 import VolumeSlider from "../../UI/VolumeSlider/VolumeSlider";
 import Icon from "../../UI/Icon";
+import Player from "../Player";
+import { sources } from '../../../utils/data'
 import styles from "./PlayerControl.module.css";
-import QualitySelector from "./QualitySelector/QualitySelector";
 
 export default function PlayerControl() {
   const [sourceId, setSourceId] = useState('1');
@@ -12,18 +13,7 @@ export default function PlayerControl() {
   const [volume, setVolume] = useState('100');
   const [iconStatus, setIconStatus] = useState('play')
 
-  useEffect(() => {
-    if (!localStorage.getItem(`source`)) {
-      localStorage.setItem(`source`,'1')
-    }
-
-    if (!localStorage.getItem(`volume`)) {
-      localStorage.setItem(`volume`,'100')
-    }
-
-    setVolume(localStorage.getItem('volume'));
-    setSourceId(localStorage.getItem('source'));
-  }, []);
+  useInitPlayerValues({ setVolume, setSourceId })
 
   function playHandler() { setIsPlaying(prev => !prev) }
 
@@ -32,10 +22,10 @@ export default function PlayerControl() {
     setSourceId(id);
   }
 
-  const handleVolumeChange = (event, newValue) => {
+  function handleVolumeChange(event, newValue) {
     setVolume(newValue);
     localStorage.setItem(`volume`, newValue);
-  };
+  }
 
   return <>
     <Player

@@ -1,4 +1,4 @@
-import {faDiscord, faTelegram} from "@fortawesome/free-brands-svg-icons";
+import { faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 export const icons = {
   play: { src: '/assets/icons/play.svg', alt: 'play icon' },
@@ -35,7 +35,6 @@ export const bgImages = [
   "bg03.gif",
   "bg05.gif",
   "bg06.gif",
-  "bg07.gif",
   "bg12.jpeg",
   "bg13.jpg",
 ]

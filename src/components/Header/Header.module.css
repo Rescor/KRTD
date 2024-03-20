@@ -4,6 +4,7 @@
   justify-content: space-between;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(4px);
+  user-select: none;
 }
 
 @media screen and (orientation: portrait) {

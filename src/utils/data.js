@@ -24,17 +24,12 @@ export const sources = [
 
 export const bgImages = [
   "bg01.jpeg",
+  "bg02.jpg",
+  "bg05.jpg",
+  "bg06.gif",
   "bg07.jpeg",
-  "bg08.jpeg",
   "bg09.jpeg",
   "bg10.jpeg",
   "bg11.jpeg",
-  "bg02.jpg",
-  "bg05.jpg",
-  "bg02.gif",
-  "bg03.gif",
-  "bg05.gif",
-  "bg06.gif",
   "bg12.jpeg",
-  "bg13.jpg",
 ]

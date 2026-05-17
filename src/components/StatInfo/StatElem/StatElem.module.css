@@ -3,6 +3,12 @@
   margin: 0 10px;
 }
 
+.elem_container img {
+  width: 24px;
+  height: 24px;
+  margin: auto auto;
+}
+
 .none_select {
   user-select: none;
 }

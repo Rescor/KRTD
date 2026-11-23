@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router";
 import RootPage from "../pages/RootPage";
 import MainPage from "../pages/MainPage";
 
